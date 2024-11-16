@@ -14,6 +14,7 @@ COPY src/Main.java /app/Main.java
 
 # Compile the Java code
 RUN javac Main.java
+EXPOSE 8000
 
 # Run the Java application when the container starts
 CMD ["java", "Main"]
